@@ -14,7 +14,7 @@ exports.postAddProduct = (req, res, next) => {
   const price = req.body.price;
   const description = req.body.description;
 
-  req.user.createProduct({
+  req.user.createProduct({  //magic association function
     title: title,
     price: price,
     imageUrl: imageUrl,
